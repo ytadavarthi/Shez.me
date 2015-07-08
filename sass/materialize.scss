@@ -61,7 +61,7 @@ body {
 }
 
 .bottomlogo {
-	padding-top: 5px;
+	padding-top: 10px;
 	padding-bottom:5px;
 	width: 50%;
 	border-top: 5px solid white;
@@ -91,7 +91,23 @@ body {
 	top: 75px;
 }
 
-#myInfo	 {
+#rightPane{
+	position:absolute;
+	right:50px;
+	top:0px;
+}
+
+#centerPane{
+	position:absolute;
+	top:calc(25%);
+	left:calc(25%);
+}
+
+#socialPane{
+	margin-top:250px;
+}
+
+ul {
 	li{
 		opacity: 0;
 	}
