@@ -37,9 +37,74 @@
 @import "components/date_picker/default.date.scss";
 @import "components/date_picker/default.time.scss"; 
 
-.landing{
-	background: url("../images/mountains.jpg") center no-repeat fixed;
+html{
+	background: url("../images/mountains.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
+	overflow: hidden;
 
 	// @extend $blue, $lighten-4;
 }
+
+body {
+	background:transparent;
+}
+
+.toplogo {
+	width: 50%;
+	border-bottom: 5px solid white;
+	font-size: 45px;
+	color:white;
+	padding-left:25px;
+}
+
+.bottomlogo {
+	padding-top: 5px;
+	padding-bottom:5px;
+	width: 50%;
+	border-top: 5px solid white;
+	font-size: 25px;
+	color:white;
+	padding-right:25px;
+	position:absolute;
+	left:calc(50%);
+	bottom:0px;
+}
+
+.infoCard {
+	width: 250px;
+	height: 190px;
+	background: transparent;
+	border: 5px solid white;
+	color: white;
+	margin: 10px 0px;
+	overflow: hidden;
+	text-align: center;
+	padding: 10px;
+}
+
+#leftPane{
+	left: 50px;
+	position: absolute;
+	top: 75px;
+}
+
+#myInfo	 {
+	li{
+		opacity: 0;
+	}
+}
+
+.collapse{
+		opacity: 0;
+}
+
+.show {
+	opacity: 1;
+}
+
+
+
+

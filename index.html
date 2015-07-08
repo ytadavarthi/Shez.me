@@ -3,15 +3,32 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Shez is Me</title>
+  <title>Shez.me</title>
 
   <!-- CSS  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="sass/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script type="text/javascript" src="js/materialize.js"></script>
+
+  <script>
+
+  $(document).ready(function(){
+    
+    $("#enterButton").click(function(){
+      $('#frontPage').fadeOut();
+      Materialize.showStaggeredList('#myInfo');
+    });
+
+  });
+
+  </script>
+
+
 </head>
 <body>
-  <nav role="navigation">
+  <!-- <nav role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Shez</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Say Hi</a></li>
@@ -22,58 +39,54 @@
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
-  </nav>
-  <div class="section landing no-pad-bot" id="index-banner">
-    <div class="row">
-    <div class="col s2">
-      
-    </div>
-      <br><br>
+  </nav> -->
+
+ <!--  <div class="title">
+    Shez
+  </div> -->
+  <div class="no-pad-bot" id="index-banner">
+  <div class="toplogo">
+    Shez
+  </div>
+    <div class="row" id="frontPage">
+      <br><br><br><br>
       <h1 class="header center orange-text">About Me.</h1>
       <div class="row center">
         <h5 class="header white-text col s12 light">An aspiring physician with technology as a passion.</h5>
       </div>
       <div class="row center">
-        <!-- <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a> -->
+        <a id="enterButton" class="btn waves-effect waves-light btn-large orange">Enter</a>
       </div>
-      <br><br>
-
     </div>
 
-    <div class="section" style="width:85%; margin: 0 auto;">
+    <div id="leftPane">
 
       <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block white-text">
-            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+      <ul id="myInfo">
+          <li class="infoCard" style="padding-top: 20px;">
+            <div class="orange-text"><i class="material-icons small">flash_on</i></div>
             <h5 class="center">Design is Key</h5>
-            <p class="light">I'm tired of things looking bad. Clean design is my passion.</p>
-          </div>
-        </div>
+            <p class="light">I'm tired of things looking bad. <br />Clean design is my passion.</p>
+          </li>
 
-        <div class="col s12 m4">
-          <div class="icon-block white-text">
-            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
+          <li class="infoCard" style="padding-top: 20px;">
+            <div class="orange-text"><i class="material-icons small">group</i></div>
+            <h5 class="center">UX Focused</h5>
 
-            <p class="light">I've seen physicians toil with EMR systems and made it my mission to work against horrible UI schemes.</p>
-          </div>
-        </div>
+            <p class="light">A stellar backend project can easily be ruined by a bad UI.</p>
+          </li>
 
-        <div class="col s12 m4">
-          <div class="icon-block white-text">
-            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
-        </div>
-      </div>
+          <li class="infoCard" style="padding-top: 10px;">
+            <div class="orange-text"><i class="material-icons small">settings</i></div>
+            <h5 class="center">Goals in Mind</h5>
+            <p class="light">Healthcare and CS should cooperate. I'm interning at Epic Systems with that in mind.</p>
+          </li>
+      </ul>
 
     </div>
     <br><br>
   </div>
+  <div class="bottomlogo">B.S. CS - Georgia Tech '16</div>
 
   <!-- <footer class="page-footer orange">
     <div class="container">
@@ -113,8 +126,6 @@
 
 
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="../../bin/materialize.js"></script>
   <script src="js/init.js"></script>
 
   </body>
