@@ -8286,64 +8286,48 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  overflow: hidden; }
+  overflow: auto; }
 
 body {
   background: transparent; }
 
-.toplogo {
-  width: 50%;
-  border-bottom: 5px solid white;
+#topName {
   font-size: 45px;
-  color: white;
-  padding-left: 25px; }
+  padding-left: 25px;
+  color: white; }
+
+.bar {
+  border: 2px solid white;
+  border-radius: 2px; }
 
 .bottomlogo {
-  padding-top: 10px;
-  padding-bottom: 5px;
-  width: 50%;
-  border-top: 5px solid white;
-  font-size: 25px;
+  font-size: 30px;
   color: white;
-  padding-right: 25px;
-  position: absolute;
-  left: calc(50%);
-  bottom: 0px; }
+  padding-right: 25px; }
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  right: 0px; }
 
 .infoCard {
-  width: 250px;
-  height: 190px;
+  height: 150px;
   background: transparent;
-  border: 5px solid white;
+  border: 2px solid white;
   color: white;
-  margin: 10px 0px;
+  margin-top: 10px;
   overflow: hidden;
   text-align: center;
   padding: 10px; }
-
-#leftPane {
-  left: 50px;
-  position: absolute;
-  top: 75px; }
-
-#rightPane {
-  position: absolute;
-  right: 50px;
-  top: 0px; }
 
 #centerPane {
   position: absolute;
   top: calc(25%);
   left: calc(25%); }
 
-#socialPane {
-  margin-top: 250px; }
-
 ul li {
   opacity: 0; }
 
 .collapse {
-  opacity: 0; }
-
-.show {
-  opacity: 1; }
+  display: none; }
