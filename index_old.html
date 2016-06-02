@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Shez.me</title>
+
+  <!-- CSS  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script type="text/javascript" src="js/materialize.js"></script>
+
+  <script>
+
+  $(document).ready(function(){
+    
+    $("#enterButton").click(function(){
+      $('#frontPage').fadeOut();
+      
+      $('.footer').css({
+        'position': 'relative'
+      });
+
+      $('#enterPage').removeClass('collapse');
+      Materialize.showStaggeredList('#myInfo');
+      Materialize.showStaggeredList('#myInfo2');
+    });
+
+  });
+
+  </script>
+
+
+</head>
+<body>
+  <!-- <nav role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Shez</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Say Hi</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Say Hi</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav> -->
+
+ <!--  <div class="title">
+    Shez
+  </div> -->
+  <div class="no-pad-bot" id="index-banner">
+    <div id="header">
+      <div id="topName">
+        Shez
+      </div>
+      <div class="row">
+        <div class="bar col s12 m8 l6"></div>
+      </div>
+    </div>
+    
+      <div class="row" id="frontPage">
+        <br><br><br><br>
+        <h1 class="header center orange-text">About Me.</h1>
+        <div>
+          <div class="row center">
+            <h5 class="header white-text col s12 light">An aspiring physician with technology as a passion.</h5>
+          </div>
+          <div class="row center">
+            <a id="enterButton" class="btn waves-effect waves-light btn-large orange">Enter</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row collapse" id="enterPage">
+        <div class="col s12 m4 l3" id="leftPane">
+          <ul id="myInfo">
+              <li class="infoCard">
+                <div class="orange-text"><i class="material-icons small">flash_on</i></div>
+                <h5 class="center">Design is Key</h5>
+                <p class="light">I'm tired of things looking bad. <br />Clean design is my passion.</p>
+              </li>
+
+              <li class="infoCard">
+                <div class="orange-text"><i class="material-icons small">group</i></div>
+                <h5 class="center">UX Focused</h5>
+
+                <p class="light">A stellar backend project can easily be ruined by a bad UI.</p>
+              </li>
+
+              <li class="infoCard">
+                <div class="orange-text"><i class="material-icons small">settings</i></div>
+                <h5 class="center">CS / Premed</h5>
+                <p class="light">I'm interning at Epic Systems, the nexus of computer science and healthcare.</p>
+              </li>
+          </ul>
+
+        </div>
+
+        <div class="col s12 m4 l6">
+          <div id="socialPane" class="center white-text">
+          Find me on any social media.<br />
+
+          <a target="_blank" href="https://www.facebook.com/yasasvit"><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/240px-Facebook_logo_%28square%29.png' class='circle' width="50px" height="50px" /></a>
+          <a target="_blank" href="https://twitter.com/ytadavarthi"><img src='http://baby-recipes.com/wp-content/uploads/1392957904_twitter.png' class='circle' width="50px" height="50px" /></a>
+          <a target="_blank" href="https://instagram.com/chezbi/"><img src='http://www.australian-macadamias.org/trade/images/News%20images/instagram_transparent_background.png' class='circle' width="50px" height="50px" /></a>
+          <a target="_blank" href="https://github.com/ytadavarthi"><img src='http://jdpirtle.com/images/social_icons/github_white.png' class='circle' width="50px" height="50px" /></a>
+          </div>
+        </div>
+
+        <div class="col s12 m4 l3" id="rightPane">
+          <ul id="myInfo2">
+              <li class="infoCard">
+                <div class="orange-text"><i class="material-icons small">headset</i></div>
+                <h5 class="center">DJ / Music Enthusiast</h5>
+                <p class="light">I <a target="_blank" href='http://www.soundcloud.com/shez_shez'>make music</a> for fun.</p>
+              </li>
+
+              <li class="infoCard">
+                <div class="orange-text"><i class="material-icons small">directions_run</i></div>
+                <h5 class="center">Dancer</h5>
+
+                <p class="light"><a target="_blank" href="https://www.youtube.com/watch?v=goY5lruPBJY">Check out</a> my team, GT Qurbani, at Bollywood America 2015!</p>
+              </li>
+
+              <li class="infoCard">
+                <div class="orange-text"><i class="material-icons small">flight</i></div>
+                <h5 class="center">Nomad</h5>
+                <p class="light">Catch me on your next flight to explore the world.</p>
+              </li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="footer">
+        <div class="row">
+          <div class="bar col s12 m8 offset-m4 l6 offset-l6"></div>
+        </div>
+        <div class="bottomlogo right-align">B.S. CS - Georgia Tech '16</div>
+      </div>
+      
+  </div>
+
+  <!--  Scripts-->
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
