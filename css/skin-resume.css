@@ -2678,6 +2678,15 @@ textarea.required-field{
 	float: none !important;
 }
 
+.footer .scroll-to-top{
+	width: 3rem;
+	height: 3rem;
+	line-height: 3rem;
+	border-radius: 0.3rem;
+	margin: auto;
+	background: #1b1b1b;
+}
+
 /* Footer Widgets */
 .footer .widget li{
 	padding-top: 0;
